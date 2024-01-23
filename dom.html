@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+              width: 200px;
+              height: 200px;
+              background-color: rgba(0, 255, 255, 0.321);
+        }
+
+        button{
+             margin-top: 15px;
+        }
+        .width{
+             width: 500px;
+             height: 200px;
+              background-color: aqua;
+        
+            }
+    </style>
+</head>
+<body>
+    <div id="screen"> </div>
+    <button onclick="change()">click</button>
+
+    <script>
+        var screen=document.getElementById("screen")
+
+        function change()
+        {
+            screen.setAttribute("class", "width");
+            screen.style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>
